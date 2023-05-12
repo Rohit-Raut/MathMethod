@@ -27,6 +27,11 @@ def get_matrix_entries(dimension):
                 except ValueError:
                     print("Invalid input. Please enter an integer for the matrix element.")
         matrix.append(row)
+    print("Matrix:")
+    for row in matrix:
+        for element in row:
+            print(f"{element:<5}", end="")
+        print()
     return matrix
 
 def calculate_determinant(matrix):
