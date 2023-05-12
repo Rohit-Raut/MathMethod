@@ -1,6 +1,7 @@
-#https://github.com/weijie-chen/Linear-Algebra-With-Python/blob/master/Chapter%203%20-%20Determinant.ipynb
+# Some of the important information is used from the following git repo
+# https://github.com/weijie-chen/Linear-Algebra-With-Python/blob/master/Chapter%203%20-%20Determinant.ipynb
 
-
+#function ask user for the input-int for number of row/column [Square matrix]
 def get_matrix_dimension():
     while True:
         try:
@@ -12,7 +13,7 @@ def get_matrix_dimension():
         except ValueError:
             print("Invalid input. Please enter a positive integer for the matrix dimension.")
 
-
+#the function is designed to ask the user for individual elements of the matrix
 def get_matrix_entries(dimension):
     matrix = []
     for i in range(dimension):
@@ -27,7 +28,6 @@ def get_matrix_entries(dimension):
                     print("Invalid input. Please enter an integer for the matrix element.")
         matrix.append(row)
     return matrix
-
 
 def calculate_determinant(matrix):
     if len(matrix) == 1:
